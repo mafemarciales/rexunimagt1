@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Expresiones regulares</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body >
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Validador de expresiones regulares</h3>
+    </div>
+    
+  </div>
+
+  <div class="form-group container">
+    <h2>Expresion : <span class="label label-default">"/(?=\w*[A-Z])(?=\w*\d){3}(?=\w*[a-z]){3}/"</span></h2>
+
+    
+
+    <form  action="/comprobar"  method="POST" >
+
+
+      <label >cadena:</label>
+      <input class="form-control" name="expresion" id="cadena"  type="text" aria-describedby="basic-addon3" >
+      <button type="submit" class="btn" id="op">verificar</button>
+    </form>
+    
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
