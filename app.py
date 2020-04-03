@@ -6,7 +6,7 @@ app =Flask(__name__)
 
 @app.route('/')
 def Index():
-    return render_template('index.html')
+    return render_template('index.php')
 
 @app.route('/results')
 def rs():
