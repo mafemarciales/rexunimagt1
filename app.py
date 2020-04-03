@@ -29,7 +29,7 @@ def validar():
 
 
 def validate(cad):
-    lenguaje = re.match('(?=\w*[A-Z])(?=\w*\d){3}(?=\w*[a-z]){3}',cad) 
+    lenguaje = re.match('([A-Z])(\d){3}([a-z]){3}(\W){3}',cad) 
     if lenguaje is None:
         return False
     else:
